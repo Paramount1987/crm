@@ -24,13 +24,8 @@
 </template>
 
 <script>
-import Select from '@/components/UI/selects/Select'
 
 export default {
-  components: {
-    Select
-  },
-
   data: () => ({
     clients: ["Все клиенты", "Вариант1", "Вариант2"],
     dates: ["За все время", "Сегодня", "За неделю", "Текущий месяц"]

@@ -1,20 +1,28 @@
 <template>
   <v-btn
     class="btn"
-    color="#ffdd2d"
+    :color="color"
     depressed
-    @click="$emit('click')"
+    :block="block"
   >
-    Создать клиента
-    <v-icon class="icon">
-      person_add
-    </v-icon>
+    {{ text }}
   </v-btn>
 </template>
 
 <script>
 export default {
-
+  props: {
+    color: {
+      type: String
+    },
+    text: {
+      type: String,
+      default: 'Кнопка'
+    },
+    block: {
+      type: Boolean
+    }
+  }
 }
 </script>
 
@@ -31,4 +39,3 @@ export default {
     margin-left: 77px;
   }
 </style>
-

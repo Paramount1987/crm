@@ -6,7 +6,11 @@
     class="table-users"
   >
     <template slot="items" slot-scope="props">
-      <UserRow :user="props.item" :rowIndex="props.index" />
+      <UserRow
+        :user="props.item"
+        :rowIndex="props.index"
+        @clickEdit="$emit('click')"
+      />
     </template>
   </v-data-table>
 </template>

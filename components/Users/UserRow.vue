@@ -19,7 +19,10 @@
       />
     </td>
     <td class="text-xs-center">
-      <div class="icon-wrap">
+      <div
+        class="icon-wrap"
+        @click="$emit('clickEdit')"
+      >
         <v-icon color="#000">edit</v-icon>
       </div>
     </td>
@@ -77,4 +80,5 @@ export default {
     height: 45px
     border-radius: 50%
     background-color: #ffdd2d
+    cursor pointer
 </style>
