@@ -73,6 +73,6 @@ module.exports = {
   },
 
   router: {
-    base: '/crm/'
+    base: '/crm/dist'
   }
 }
