@@ -23,6 +23,12 @@ export default {
       items: [
         {
           icon: 'people',
+          title: 'Лента событий',
+          badge: '3',
+          to: '/events'
+        },
+        {
+          icon: 'people',
           title: 'Пользователи',
           to: '/users'
         },

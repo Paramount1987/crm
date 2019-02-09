@@ -23,7 +23,11 @@
         </v-list-tile-action>
 
         <v-list-tile-content>
-          <v-list-tile-title v-text="item.title" />
+          <v-badge v-if="item.badge" color="#ffdd2d">
+            <span slot="badge">{{item.badge}}</span>
+            <v-list-tile-title v-text="item.title" />
+          </v-badge>
+          <v-list-tile-title v-else v-text="item.title" />
         </v-list-tile-content>
 
       </v-list-tile>
@@ -59,6 +63,9 @@ export default {
   .navigation
     box-shadow: 0 0 10px 0 rgba(4, 5, 5, 0.15)
 
+  .v-list__tile__content
+    overflow: visible
+
   .v-list-tile-nav
     .v-list__tile
       height: auto
@@ -71,4 +78,7 @@ export default {
 
   .nav-avatar
     padding: 30px 15px 22px 40px
+
+  .v-badge__badge
+    color: #000
 </style>
