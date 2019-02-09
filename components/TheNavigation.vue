@@ -64,7 +64,7 @@ export default {
     box-shadow: 0 0 10px 0 rgba(4, 5, 5, 0.15)
 
   .v-list__tile__content
-    overflow: visible
+    overflow: visible !important
 
   .v-list-tile-nav
     .v-list__tile
