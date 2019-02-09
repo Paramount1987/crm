@@ -22,10 +22,15 @@ export default {
     return {
       items: [
         {
-          icon: 'people',
+          icon: 'list',
           title: 'Лента событий',
           badge: '3',
           to: '/events'
+        },
+        {
+          icon: 'save_alt',
+          title: 'Выдача',
+          to: '/delivery'
         },
         {
           icon: 'people',
