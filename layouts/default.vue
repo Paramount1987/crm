@@ -33,6 +33,11 @@ export default {
           to: '/delivery'
         },
         {
+          icon: 'folder_shared',
+          title: 'Прив. компании',
+          to: '/companies'
+        },
+        {
           icon: 'people',
           title: 'Пользователи',
           to: '/users'

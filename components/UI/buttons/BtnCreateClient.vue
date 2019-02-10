@@ -5,7 +5,7 @@
     depressed
     @click="$emit('click')"
   >
-    Создать клиента
+    {{ text || 'Создать клиента' }}
     <v-icon class="icon">
       person_add
     </v-icon>
@@ -14,7 +14,11 @@
 
 <script>
 export default {
-
+  props: {
+    text: {
+      type: String
+    }
+  }
 }
 </script>
 
