@@ -6,7 +6,8 @@
     @click="$emit('click')"
   >
     {{ text || 'Создать клиента' }}
-    <v-icon class="icon">
+
+    <v-icon v-if="!icon" class="icon">
       person_add
     </v-icon>
   </v-btn>
@@ -16,6 +17,9 @@
 export default {
   props: {
     text: {
+      type: String
+    },
+    icon: {
       type: String
     }
   }

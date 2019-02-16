@@ -29,6 +29,12 @@ export default {
         },
         {
           icon: 'save_alt',
+          title: 'Компании на выд.',
+          badge: '12',
+          to: '/companies/delivery'
+        },
+        {
+          icon: 'save_alt',
           title: 'Выдача',
           to: '/delivery'
         },

@@ -1,5 +1,10 @@
 // TODO: fix styles
-
+html {
+  overflow-x auto
+}
+.application {
+  min-width: 1830px;
+}
 .theme--light.v-text-field--solo > .v-input__control > .v-input__slot {
   padding-left: 27px !important;
   border-radius: 10px !important;
@@ -31,15 +36,30 @@ table.v-table thead tr.v-datatable__progress th {
 }
 
 // -----------------------------------------------------typographic
-h1 {
-  font-size: 36px;
+h1,
+h2,
+h3 {
   line-height: 1;
   font-weight: normal;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
 }
 
 // -----------------------------------------------------btn & link
 .v-btn {
   min-width: 60px !important;
+}
+.v-date-picker-table--date .v-btn {
+  min-width: 32px !important;
 }
 td a {
   color: #29abe2 !important;
