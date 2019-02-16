@@ -80,5 +80,5 @@ export default {
     padding: 30px 15px 22px 40px
 
   .v-badge__badge
-    color: #000
+    color: #000 !important
 </style>
